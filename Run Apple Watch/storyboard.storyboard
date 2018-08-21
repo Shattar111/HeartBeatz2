@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Maj-ew-vaw">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="3Hf-mJ-ff0">
+            <objects>
+                <controller identifier="home" title="Home" id="1ti-B1-dx7" customClass="HomeInterfaceController">
+                    <items>
+                        <group width="1" alignment="left" id="W6r-Dl-7F8">
+                            <items>
+                                <label alignment="center" verticalAlignment="bottom" text="Start workout:" id="Xfd-Pi-ckR"/>
+                            </items>
+                        </group>
+                        <button width="80" height="80" alignment="center" verticalAlignment="center" backgroundImage="Heartbeat496" id="qr2-sd-hd8">
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </button>
+                    </items>
+                    <menu key="menu" id="bh9-z2-U0J">
+                        <items>
+                            <menuItem title="More" icon="add" id="y2m-za-qFs"/>
+                            <menuItem title="Info" icon="info" id="jEJ-D4-Zsb"/>
+                        </items>
+                    </menu>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="159" y="469"/>
+        </scene>
+        <!--New Run-->
+        <scene sceneID="8SC-TT-5qm">
+            <objects>
+                <controller identifier="idRun" title="New Run" id="Maj-ew-vaw" customClass="InterfaceController">
+                    <items>
+                        <group width="1" alignment="left" id="lSg-9O-Rqq">
+                            <items>
+                                <label alignment="center" text="Start Workout:" textAlignment="justified" baselineAdjustment="alignCenters" id="e1E-Q2-908"/>
+                            </items>
+                        </group>
+                        <button width="99" height="99" alignment="center" backgroundImage="Heartbeat496" id="ken-2W-hAv">
+                            <connections>
+                                <action selector="Countdown2:" destination="Maj-ew-vaw" id="Mod-I2-TWn"/>
+                            </connections>
+                        </button>
+                        <group width="1" height="31" alignment="left" id="K73-x9-lEH">
+                            <items>
+                                <label height="35" alignment="left" text="00:00" textAlignment="left" numberOfLines="2" id="W6D-ej-XIm">
+                                    <fontDescription key="font" type="system" weight="light" pointSize="32"/>
+                                    <variation key="device=watch42mm">
+                                        <fontDescription key="font" type="system" weight="light" pointSize="33"/>
+                                    </variation>
+                                </label>
+                                <label alignment="left" text=".00" id="PTQ-Nt-tA4"/>
+                            </items>
+                        </group>
+                        <label width="1" height="28" alignment="left" text="00'00&quot; MI" textAlignment="left" numberOfLines="2" id="bqF-lu-24Q">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="28"/>
+                            <variation key="device=watch42mm">
+                                <fontDescription key="font" type="system" pointSize="33"/>
+                            </variation>
+                        </label>
+                        <label alignment="left" text="LAP --" id="Ij4-FV-GS4">
+                            <color key="textColor" red="0.83867591620000004" green="0.85487133260000003" blue="0.86314290760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="28"/>
+                            <variation key="device=watch42mm">
+                                <fontDescription key="font" type="system" pointSize="28"/>
+                            </variation>
+                        </label>
+                        <label width="1" height="28" alignment="left" text="--- BPM" textAlignment="left" numberOfLines="2" id="Uwq-at-BUb">
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="28"/>
+                            <variation key="device=watch42mm">
+                                <fontDescription key="font" type="system" pointSize="33"/>
+                            </variation>
+                        </label>
+                        <label width="1" height="30" alignment="left" text="--.-- mi" textAlignment="left" numberOfLines="2" id="ATj-en-8TQ">
+                            <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="33"/>
+                            <variation key="device=watch42mm">
+                                <fontDescription key="font" type="system" pointSize="33"/>
+                            </variation>
+                        </label>
+                        <button width="1" alignment="left" title="Resume" id="2Ig-st-LiK">
+                            <connections>
+                                <action selector="Resume:" destination="Maj-ew-vaw" id="1fN-aa-VQG"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Pause" id="BpZ-Dy-wq3">
+                            <connections>
+                                <action selector="Pause:" destination="Maj-ew-vaw" id="RNh-n7-Dmy"/>
+                            </connections>
+                        </button>
+                        <button width="156" height="33" alignment="right" title="Stop" id="eib-gB-99G">
+                            <connections>
+                                <action selector="stop:" destination="Maj-ew-vaw" id="3g2-KY-3tr"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="LapLabel" destination="Ij4-FV-GS4" id="BVZ-wr-ndu"/>
+                        <outlet property="PauseHeartWorkout" destination="BpZ-Dy-wq3" id="A4g-c5-HYy"/>
+                        <outlet property="ResumeHeartWorkout" destination="2Ig-st-LiK" id="NOM-3F-fsA"/>
+                        <outlet property="StartHeartWorkout" destination="ken-2W-hAv" id="qDQ-8h-8l6"/>
+                        <outlet property="StartWorkoutLabel" destination="e1E-Q2-908" id="DkT-y8-Q0g"/>
+                        <outlet property="StopHeartWorkout" destination="eib-gB-99G" id="w08-d6-2ej"/>
+                        <outlet property="heartLabel" destination="Uwq-at-BUb" id="hBb-bI-FIK"/>
+                        <outlet property="milageLabel" destination="ATj-en-8TQ" id="OsX-9w-6kj"/>
+                        <outlet property="milisecondsLabel" destination="PTQ-Nt-tA4" id="gVd-WH-0AL"/>
+                        <outlet property="paceLabel" destination="bqF-lu-24Q" id="viR-V7-jtO"/>
+                        <outlet property="timeLabel" destination="W6D-ej-XIm" id="TCK-ri-npu"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="372" y="772"/>
+        </scene>
+        <!--info-->
+        <scene sceneID="zMs-UM-jRi">
+            <objects>
+                <controller identifier="info" title="info" id="OFG-kB-t8o" customClass="HeartMonitorInterfaceController">
+                    <items>
+                        <group width="1" alignment="left" id="GKR-KL-gGx">
+                            <items>
+                                <label alignment="left" text="00:00" id="whw-vF-fql">
+                                    <fontDescription key="font" type="system" pointSize="25"/>
+                                    <variation key="device=watch42mm">
+                                        <fontDescription key="font" type="system" pointSize="25"/>
+                                    </variation>
+                                </label>
+                                <label alignment="left" text="'00" id="GlB-yR-E2w">
+                                    <fontDescription key="font" type="system" pointSize="25"/>
+                                    <variation key="device=watch42mm">
+                                        <fontDescription key="font" type="system" pointSize="25"/>
+                                    </variation>
+                                </label>
+                            </items>
+                        </group>
+                        <separator alignment="left" alpha="0.59999999999999998" id="oNk-6t-jyz"/>
+                        <group width="1" alignment="left" layout="vertical" spacing="0.0" id="4i8-Y4-8Ej">
+                            <items>
+                                <label alignment="left" text="Current:" id="bhe-rC-k1A">
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                </label>
+                                <label width="133.5" height="33" alignment="left" text="---BPM" id="W9x-IB-GIw">
+                                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="37"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="37"/>
+                                    </variation>
+                                    <variation key="device=watch42mm" height="40" width="154.5">
+                                        <fontDescription key="font" type="system" pointSize="42"/>
+                                    </variation>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" spacing="0.0" id="qWJ-Pu-eI9">
+                            <items>
+                                <label alignment="left" text="Lowest:" id="FLK-4O-HHu">
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                </label>
+                                <label width="124" height="29" alignment="left" text="---BPM" id="gMX-IU-Xnd">
+                                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="25"/>
+                                    <variation key="device=watch42mm" height="40" width="153">
+                                        <fontDescription key="font" type="system" pointSize="30"/>
+                                    </variation>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <menu key="menu" id="mra-hY-1U7">
+                        <items>
+                            <menuItem title="Stop" icon="pause" id="Hfn-4F-uLA">
+                                <connections>
+                                    <action selector="stop" destination="OFG-kB-t8o" id="bdG-CX-eQx"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Clear" icon="trash" id="F6u-3p-5wf">
+                                <connections>
+                                    <action selector="clear" destination="OFG-kB-t8o" id="TQ2-dj-mCw"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="LowestLabel" destination="gMX-IU-Xnd" id="BbP-XD-e2w"/>
+                        <outlet property="currentLabel" destination="W9x-IB-GIw" id="OZV-uF-Jum"/>
+                        <outlet property="milisecondLabel" destination="GlB-yR-E2w" id="KDL-co-D0e"/>
+                        <outlet property="secondLabel" destination="whw-vF-fql" id="WLm-EI-wLo"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="439" y="180"/>
+        </scene>
+        <!--detail-->
+        <scene sceneID="QBc-Xn-EXD">
+            <objects>
+                <controller identifier="detail" title="detail" id="7qm-hX-h4C" customClass="DetailInterfaceController">
+                    <items>
+                        <label height="30" alignment="left" text="00.00mi" id="gMK-kn-fn4">
+                            <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="light" pointSize="35"/>
+                        </label>
+                        <group width="1" height="30" alignment="left" spacing="0.0" id="OIT-kj-yLT">
+                            <items>
+                                <label height="30" alignment="left" text="00:00" id="9TD-yL-f8J">
+                                    <fontDescription key="font" type="system" weight="light" pointSize="30"/>
+                                </label>
+                                <label alignment="left" text=".00" id="q7y-qp-MgI">
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label height="30" alignment="left" text="130BPM" id="NAP-yn-MaE">
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="28"/>
+                        </label>
+                        <label height="30" alignment="left" text="5'30&quot; MI" id="56D-6a-TMx">
+                            <fontDescription key="font" type="system" pointSize="28"/>
+                        </label>
+                        <button width="1" alignment="left" title="Save" id="N6V-zG-5kL">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.98039215690000003" green="0.49019607840000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="18"/>
+                            <connections>
+                                <action selector="save" destination="7qm-hX-h4C" id="ckG-OW-BVe"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="Distance" destination="gMK-kn-fn4" id="Xqa-Ud-R5T"/>
+                        <outlet property="Heartrate" destination="NAP-yn-MaE" id="IhJ-kv-jAb"/>
+                        <outlet property="Pace" destination="56D-6a-TMx" id="SUH-Bg-oQg"/>
+                        <outlet property="Time" destination="9TD-yL-f8J" id="6EI-1C-bQ6"/>
+                        <outlet property="milisecondsLabel" destination="q7y-qp-MgI" id="4av-TW-hee"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="623" y="508"/>
+        </scene>
+    </scenes>
+</document>

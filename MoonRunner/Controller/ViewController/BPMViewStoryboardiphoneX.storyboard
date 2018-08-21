@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--BPM-->
+        <scene sceneID="Z5z-Gd-MLD">
+            <objects>
+                <viewController id="OZE-yh-NS4" customClass="BPMViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pcH-c3-34P"/>
+                        <viewControllerLayoutGuide type="bottom" id="aG8-IW-QGy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ick-Zx-mAh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GLk-AB-hVX">
+                                <rect key="frame" x="0.0" y="80" width="375" height="649"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZPe-ha-lke">
+                                        <rect key="frame" x="0.0" y="-3" width="375" height="2"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JyJ-x3-0EM">
+                                        <rect key="frame" x="0.0" y="4" width="375" height="2"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zeo-TN-cBX">
+                                        <rect key="frame" x="0.0" y="647" width="375" height="2"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.21927210688591003" green="0.22695243358612061" blue="0.25600475072860718" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rt9-Tt-nmH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXk-Vv-lzz">
+                                        <rect key="frame" x="12" y="39" width="66" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="DissmissBPMView:" destination="OZE-yh-NS4" eventType="touchUpInside" id="UpX-st-pwe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="806-O0-YzN">
+                                        <rect key="frame" x="309" y="43" width="58" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="19"/>
+                                        <state key="normal" title="Done">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="DissmissBPMView:" destination="OZE-yh-NS4" eventType="touchUpInside" id="WgK-wb-Vdj"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heartpulse2.png" translatesAutoresizingMaskIntoConstraints="NO" id="zsS-8j-twb">
+                                        <rect key="frame" x="169" y="43" width="37" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.21927210688591003" green="0.22695243358612061" blue="0.25600475072860718" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgV-yG-3fa">
+                                <rect key="frame" x="0.0" y="109" width="375" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tempo2.png"/>
+                                <connections>
+                                    <action selector="BPM1ButtonPushed:" destination="OZE-yh-NS4" eventType="touchUpInside" id="S3N-Kg-TNT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqX-tc-agZ">
+                                <rect key="frame" x="0.0" y="237" width="375" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tempo3.png">
+                                    <color key="titleColor" red="0.070588235294117646" green="0.396078431372549" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BPM2ButtonPushed:" destination="OZE-yh-NS4" eventType="touchUpInside" id="bqd-3q-xzf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31x-qn-Kr7">
+                                <rect key="frame" x="0.0" y="367" width="375" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tempo4.png"/>
+                                <connections>
+                                    <action selector="BPM3ButtonPushed:" destination="OZE-yh-NS4" eventType="touchUpInside" id="ZgN-Yw-tRg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJA-a4-0Xx">
+                                <rect key="frame" x="0.0" y="497" width="375" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tempo5.png"/>
+                                <connections>
+                                    <action selector="BPM4ButtonPushed:" destination="OZE-yh-NS4" eventType="touchUpInside" id="WUO-TH-bOk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JyS-6w-IKc">
+                                <rect key="frame" x="0.0" y="626" width="375" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tempo6.png"/>
+                                <connections>
+                                    <action selector="BPM5ButtonPushed:" destination="OZE-yh-NS4" eventType="touchUpInside" id="WzB-1m-g8j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" enabled="NO" title="BPM" image="playlist32.png" id="6w0-kE-x6X" userLabel="BPM Selection">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-1"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="BPM1" destination="zgV-yG-3fa" id="vRM-uG-T6D"/>
+                        <outlet property="BPM2" destination="TqX-tc-agZ" id="owh-m4-xEz"/>
+                        <outlet property="BPM3" destination="31x-qn-Kr7" id="AVP-Dw-odQ"/>
+                        <outlet property="BPM4" destination="xJA-a4-0Xx" id="Qgx-JT-qJ1"/>
+                        <outlet property="BPM5" destination="JyS-6w-IKc" id="9zW-xG-mf2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jAg-HR-BGM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="693.60000000000002" y="-488.42364532019707"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="35s-k5-Fum">
+            <objects>
+                <tabBarController storyboardIdentifier="BPMViewController" id="FCM-eF-5g2" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="BCn-Wu-yue">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.21927210688591003" green="0.22695243358612061" blue="0.25600475072860718" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.30251953124999997" green="0.30251953124999997" blue="0.30251953124999997" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="OZE-yh-NS4" kind="relationship" relationship="viewControllers" id="nXh-Ov-cNt"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="94k-Qh-lYs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-256" y="-160"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heartpulse2.png" width="100" height="100"/>
+        <image name="playlist32.png" width="32" height="32"/>
+        <image name="tempo2.png" width="2070" height="535"/>
+        <image name="tempo3.png" width="1242" height="327"/>
+        <image name="tempo4.png" width="1242" height="327"/>
+        <image name="tempo5.png" width="1242" height="327"/>
+        <image name="tempo6.png" width="1242" height="327"/>
+    </resources>
+</document>

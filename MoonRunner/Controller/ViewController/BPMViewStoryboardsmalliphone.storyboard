@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--BPM-->
+        <scene sceneID="Z5z-Gd-MLD">
+            <objects>
+                <viewController id="OZE-yh-NS4" customClass="BPMViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pcH-c3-34P"/>
+                        <viewControllerLayoutGuide type="bottom" id="aG8-IW-QGy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ick-Zx-mAh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rt9-Tt-nmH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="806-O0-YzN">
+                                        <rect key="frame" x="308" y="24" width="58" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="19"/>
+                                        <state key="normal" title="Done">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="DissmissBPMView:" destination="OZE-yh-NS4" eventType="touchUpInside" id="WgK-wb-Vdj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXk-Vv-lzz">
+                                        <rect key="frame" x="12" y="20" width="66" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="DissmissBPMView:" destination="OZE-yh-NS4" eventType="touchUpInside" id="UpX-st-pwe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.22742196919999999" green="0.22746768589999999" blue="0.2274190784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lBY-G8-Ped">
+                                <rect key="frame" x="0.0" y="62" width="414" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgV-yG-3fa">
+                                <rect key="frame" x="21" y="169" width="136" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BPM Playlist 68-79 "/>
+                                <connections>
+                                    <action selector="BPM1ButtonPushed:" destination="OZE-yh-NS4" eventType="touchUpInside" id="S3N-Kg-TNT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqX-tc-agZ">
+                                <rect key="frame" x="226" y="169" width="131" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BPM Playlist 80-97">
+                                    <color key="titleColor" red="0.070588235294117646" green="0.396078431372549" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BPM2ButtonPushed:" destination="OZE-yh-NS4" eventType="touchUpInside" id="bqd-3q-xzf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31x-qn-Kr7">
+                                <rect key="frame" x="18" y="384" width="139" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BPM Playlist 98-109"/>
+                                <connections>
+                                    <action selector="BPM3ButtonPushed:" destination="OZE-yh-NS4" eventType="touchUpInside" id="ZgN-Yw-tRg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JyS-6w-IKc">
+                                <rect key="frame" x="113" y="523" width="153" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BPM Playlist 131-150+"/>
+                                <connections>
+                                    <action selector="BPM5ButtonPushed:" destination="OZE-yh-NS4" eventType="touchUpInside" id="WzB-1m-g8j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJA-a4-0Xx">
+                                <rect key="frame" x="218" y="384" width="143" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BPM Playlist 110-130"/>
+                                <connections>
+                                    <action selector="BPM4ButtonPushed:" destination="OZE-yh-NS4" eventType="touchUpInside" id="WUO-TH-bOk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" enabled="NO" title="BPM" image="playlist32.png" id="6w0-kE-x6X" userLabel="BPM Selection"/>
+                    <connections>
+                        <outlet property="BPM1" destination="zgV-yG-3fa" id="vRM-uG-T6D"/>
+                        <outlet property="BPM2" destination="TqX-tc-agZ" id="owh-m4-xEz"/>
+                        <outlet property="BPM3" destination="31x-qn-Kr7" id="AVP-Dw-odQ"/>
+                        <outlet property="BPM4" destination="xJA-a4-0Xx" id="Qgx-JT-qJ1"/>
+                        <outlet property="BPM5" destination="JyS-6w-IKc" id="9zW-xG-mf2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jAg-HR-BGM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="694.20289855072474" y="-488.31521739130437"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="35s-k5-Fum">
+            <objects>
+                <tabBarController storyboardIdentifier="BPMViewController" id="FCM-eF-5g2" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="BCn-Wu-yue">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.22742196919999999" green="0.22746768589999999" blue="0.2274190784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="OZE-yh-NS4" kind="relationship" relationship="viewControllers" id="nXh-Ov-cNt"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="94k-Qh-lYs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-256" y="-160"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="playlist32.png" width="32" height="32"/>
+    </resources>
+</document>
