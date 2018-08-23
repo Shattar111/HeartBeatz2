@@ -85,7 +85,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31x-qn-Kr7">
                                 <rect key="frame" x="0.0" y="315" width="414" height="109"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="BPM Playlist 98-109" image="tempo4.png"/>
+                                <state key="normal" image="tempo4.png"/>
                                 <connections>
                                     <action selector="BPM3ButtonPushed:" destination="OZE-yh-NS4" eventType="touchUpInside" id="ZgN-Yw-tRg"/>
                                 </connections>
@@ -93,7 +93,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJA-a4-0Xx">
                                 <rect key="frame" x="0.0" y="440" width="414" height="109"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="BPM Playlist 110-130" image="tempo5.png"/>
+                                <state key="normal" image="tempo5.png"/>
                                 <connections>
                                     <action selector="BPM4ButtonPushed:" destination="OZE-yh-NS4" eventType="touchUpInside" id="WUO-TH-bOk"/>
                                 </connections>

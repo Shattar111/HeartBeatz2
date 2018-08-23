@@ -55,50 +55,50 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgV-yG-3fa">
-                                <rect key="frame" x="21" y="169" width="136" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgV-yG-3fa">
+                                <rect key="frame" x="0.0" y="79" width="375" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="BPM Playlist 68-79 "/>
+                                <state key="normal" image="tempo2.png"/>
                                 <connections>
                                     <action selector="BPM1ButtonPushed:" destination="OZE-yh-NS4" eventType="touchUpInside" id="S3N-Kg-TNT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqX-tc-agZ">
-                                <rect key="frame" x="226" y="169" width="131" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqX-tc-agZ">
+                                <rect key="frame" x="0.0" y="184" width="377" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="BPM Playlist 80-97">
+                                <state key="normal" image="tempo3.png">
                                     <color key="titleColor" red="0.070588235294117646" green="0.396078431372549" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="BPM2ButtonPushed:" destination="OZE-yh-NS4" eventType="touchUpInside" id="bqd-3q-xzf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31x-qn-Kr7">
-                                <rect key="frame" x="18" y="384" width="139" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JyS-6w-IKc">
+                                <rect key="frame" x="1" y="507" width="375" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="BPM Playlist 98-109"/>
-                                <connections>
-                                    <action selector="BPM3ButtonPushed:" destination="OZE-yh-NS4" eventType="touchUpInside" id="ZgN-Yw-tRg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JyS-6w-IKc">
-                                <rect key="frame" x="113" y="523" width="153" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="BPM Playlist 131-150+"/>
+                                <state key="normal" image="tempo6.png"/>
                                 <connections>
                                     <action selector="BPM5ButtonPushed:" destination="OZE-yh-NS4" eventType="touchUpInside" id="WzB-1m-g8j"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJA-a4-0Xx">
-                                <rect key="frame" x="218" y="384" width="143" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJA-a4-0Xx">
+                                <rect key="frame" x="-1" y="399" width="376" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="BPM Playlist 110-130"/>
+                                <state key="normal" image="tempo5.png"/>
                                 <connections>
                                     <action selector="BPM4ButtonPushed:" destination="OZE-yh-NS4" eventType="touchUpInside" id="WUO-TH-bOk"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31x-qn-Kr7">
+                                <rect key="frame" x="0.0" y="291" width="377" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tempo4.png"/>
+                                <connections>
+                                    <action selector="BPM3ButtonPushed:" destination="OZE-yh-NS4" eventType="touchUpInside" id="ZgN-Yw-tRg"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.22742196917533875" green="0.22746768593788147" blue="0.22741907835006714" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" enabled="NO" title="BPM" image="playlist32.png" id="6w0-kE-x6X" userLabel="BPM Selection"/>
                     <connections>
@@ -111,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jAg-HR-BGM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="694.20289855072474" y="-488.31521739130437"/>
+            <point key="canvasLocation" x="693.60000000000002" y="-488.90554722638683"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="35s-k5-Fum">
@@ -137,5 +137,10 @@
     </scenes>
     <resources>
         <image name="playlist32.png" width="32" height="32"/>
+        <image name="tempo2.png" width="2070" height="535"/>
+        <image name="tempo3.png" width="1242" height="327"/>
+        <image name="tempo4.png" width="1242" height="327"/>
+        <image name="tempo5.png" width="1242" height="327"/>
+        <image name="tempo6.png" width="1242" height="327"/>
     </resources>
 </document>

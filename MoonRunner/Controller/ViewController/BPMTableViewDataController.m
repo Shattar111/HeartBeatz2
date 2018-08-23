@@ -75,7 +75,7 @@ NSString *ArtistString;
         
         // add to canvas
         [self.view addSubview:tableView];
-        [self PlayButtonEnabled];
+       // [self PlayButtonEnabled];
     }
 
     
