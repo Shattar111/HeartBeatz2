@@ -312,7 +312,10 @@ NSSortDescriptor *timeSortDescription = [[NSSortDescriptor alloc] initWithKey:HK
     
     NSString *val = [listItems objectAtIndex: 1];
     
-    [self.LapLabel setText:[NSString stringWithFormat:@"LAP%@", val]];
+    NSString *Space = @"  ";
+    NSString *SpaceString = [Space stringByAppendingString:val];
+    
+    [self.LapLabel setText:[NSString stringWithFormat:@"LAP%@", SpaceString]];
     
     //set watch label to val, lap val
     NSLog(@"data----%@",val);

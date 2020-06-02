@@ -1225,7 +1225,6 @@
 				TargetAttributes = {
 					00C80B551C79249E005C4E39 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = LM5H55F46S;
 						SystemCapabilities = {
 							com.apple.BackgroundModes.watchos.app = {
 								enabled = 0;
@@ -1234,7 +1233,6 @@
 					};
 					00C80B611C79249E005C4E39 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = LM5H55F46S;
 						SystemCapabilities = {
 							com.apple.HealthKit = {
 								enabled = 1;
@@ -1242,7 +1240,6 @@
 						};
 					};
 					FA1F95061929CF2600A0179A = {
-						DevelopmentTeam = LM5H55F46S;
 						SystemCapabilities = {
 							com.apple.HealthKit = {
 								enabled = 1;
@@ -1262,6 +1259,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -1626,13 +1624,13 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CODE_SIGN_ENTITLEMENTS = "Run Apple Watch Extension/Run Apple Watch Extension.entitlements";
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = LM5H55F46S;
+				DEVELOPMENT_TEAM = GG5J7H8A2N;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = "Run Apple Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sphere3d.watchapp7.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KrystalSkye.Heartbeatz.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1648,13 +1646,13 @@
 				CODE_SIGN_ENTITLEMENTS = "Run Apple Watch Extension/Run Apple Watch Extension.entitlements";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = LM5H55F46S;
+				DEVELOPMENT_TEAM = GG5J7H8A2N;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = "Run Apple Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sphere3d.watchapp7.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KrystalSkye.Heartbeatz.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1671,13 +1669,13 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = LM5H55F46S;
+				DEVELOPMENT_TEAM = GG5J7H8A2N;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = NO;
 				IBSC_MODULE = Run_Apple_Watch_Extension;
 				INFOPLIST_FILE = "Run Apple Watch/Info.plist";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sphere3d.watchapp7.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KrystalSkye.Heartbeatz.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1695,13 +1693,13 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = LM5H55F46S;
+				DEVELOPMENT_TEAM = GG5J7H8A2N;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = NO;
 				IBSC_MODULE = Run_Apple_Watch_Extension;
 				INFOPLIST_FILE = "Run Apple Watch/Info.plist";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sphere3d.watchapp7.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KrystalSkye.Heartbeatz.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1801,7 +1799,7 @@
 				CODE_SIGN_ENTITLEMENTS = Run.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = LM5H55F46S;
+				DEVELOPMENT_TEAM = GG5J7H8A2N;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1813,7 +1811,7 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/MoonRunner/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sphere3d.watchapp7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KrystalSkye.Heartbeatz;
 				PRODUCT_NAME = Run;
 				PROVISIONING_PROFILE = "";
 				VALID_ARCHS = "armv7 arm64 armv7s";
@@ -1829,7 +1827,7 @@
 				CODE_SIGN_ENTITLEMENTS = Run.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = LM5H55F46S;
+				DEVELOPMENT_TEAM = GG5J7H8A2N;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1842,7 +1840,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/MoonRunner/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sphere3d.watchapp7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KrystalSkye.Heartbeatz;
 				PRODUCT_NAME = Run;
 				PROVISIONING_PROFILE = "";
 				VALID_ARCHS = "armv7 arm64 armv7s";

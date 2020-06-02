@@ -45,7 +45,7 @@
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath*)indexPath {
     
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        
+        /*
         NSManagedObjectContext *context = [self managedObjectContext];
         NSManagedObject *eventToDelete = [context objectWithID:[[self.runArray objectAtIndex:indexPath.row] objectID]];
         
@@ -61,6 +61,7 @@
             [self.runArray removeObjectAtIndex:indexPath.row];
             [self.table deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
         }
+         */
     }
 }
 

@@ -46,16 +46,11 @@ BOOL BeingPlayed;
     {
         if(Ver == nil)
         {
-            
-        }
-        //Run once-per-upgrade code, if any
-        [Def setObject:CurVer forKey:@"Version"];
-    }
             NSLog(@"hitoncethatsaboutit");
-    
+            
             _Removetipview = YES;
             [self Setuptip];
-    
+            
             self.lastPageButton= [UIButton buttonWithType:UIButtonTypeSystem];
             // [self.lastPageButton setBackgroundImage:[UIImage imageNamed:@"Forward.png"]
             // forState:UIControlStateNormal];
@@ -78,33 +73,33 @@ BOOL BeingPlayed;
             button.backgroundColor = [UIColor colorWithRed:70.f/255.f green:130.f/255.f blue:180.f/255.f alpha:1.f];
             
             [button setTitle:@"Skip" forState:UIControlStateNormal];
-    
-    NSString *platformString = [UIDeviceHardware platformString];
-    
-    if ([platformString isEqualToString:@"iPhone 7 Plus"] || [platformString isEqualToString:@"iPhone 8 Plus"] || [platformString isEqualToString:@"iPhone 6 Plus"] || [platformString isEqualToString:@"iPhone 6s Plus"])
-    {
-        button.frame = CGRectMake(95,685, 220, 40.0);
-
-    }
-    else if ([platformString isEqualToString:@"iPhone X"])
-    {
-        NSLog(@"iphonxishit");
-        button.frame = CGRectMake(75,680, 220, 40.0);
-    }
-    else
-    {
-        button.frame = CGRectMake(78,610, 220, 40.0);
-
-    }
-
-
+            
+            NSString *platformString = [UIDeviceHardware platformString];
+            
+            if ([platformString isEqualToString:@"iPhone 7 Plus"] || [platformString isEqualToString:@"iPhone 8 Plus"] || [platformString isEqualToString:@"iPhone 6 Plus"] || [platformString isEqualToString:@"iPhone 6s Plus"])
+            {
+                button.frame = CGRectMake(95,685, 220, 40.0);
+                
+            }
+            else if ([platformString isEqualToString:@"iPhone X"])
+            {
+                NSLog(@"iphonxishit");
+                button.frame = CGRectMake(75,680, 220, 40.0);
+            }
+            else
+            {
+                button.frame = CGRectMake(78,610, 220, 40.0);
+                
+            }
+            
+            
             NSArray *pageContentArray = @[@{kNDIntroPageTitle : @"HeartBeatz",
                                             kNDIntroPageDescription : @"Please sync or pair to Apple iWatch to continue.",
                                             kNDIntroPageImageName : @"Applewatch"
                                             },
                                           @{kNDIntroPageTitle : @"Welcome",
                                             kNDIntroPageDescription : @"Welcome to HeartBeatz, an iOS application that syncs the music from your favorite playlist to the rate of your heart beat. Feeling punmped? So will your music!",
-                                           // kNDIntroPageImageName : @"workitout"
+                                            // kNDIntroPageImageName : @"workitout"
                                             },
                                           @{kNDIntroPageTitle : @"Heart Rate",
                                             kNDIntroPageDescription : @"During a workout, measure your calories, fat and carbohydates, burned. Keep track of workouts by steps taken, distance and beats per minute(BPM).",
@@ -126,6 +121,11 @@ BOOL BeingPlayed;
             [self.introView addSubview:button];
             
             [[UIApplication sharedApplication].keyWindow addSubview:self.introView];
+        }
+        //Run once-per-upgrade code, if any
+        [Def setObject:CurVer forKey:@"Version"];
+    }
+    
      
 
     if ([WCSession isSupported]) {
@@ -390,10 +390,24 @@ BOOL BeingPlayed;
     
     NSString *LapCounter = [Lap stringByAppendingString:LapNum];
 
+    NSLog(@"data----%@",LapCounter);
+//lap not sending to watch.. null? maybe split here by , then send to phone
     
+    /*
+     // change watch lap label here...
+     NSArray *listItems = [LapWorkout componentsSeparatedByString:@","];
+     
+     NSString *val = [listItems objectAtIndex: 1];
+     
+     [self.LapLabel setText:[NSString stringWithFormat:@"LAP%@", val]];
+     
+     //set watch label to val, lap val
+     NSLog(@"data----%@",val);
+     */
     
     NSDictionary *applicationData3 = [[NSDictionary alloc] initWithObjects:@[LapCounter] forKeys:@[@"LapLabelValuetoWatch"]];
-    
+    NSLog(@"data----%@",LapCounter);
+
     [[WCSession defaultSession] sendMessage:applicationData3
                                replyHandler:^(NSDictionary *reply) {
                                    //handle reply from iPhone app here
@@ -417,7 +431,20 @@ BOOL BeingPlayed;
      */
 
 }
-
+-(void)sessionWatchStateDidChange:(WCSession *)session{
+    NSLog(@"watch status changed");
+}
+-(void)sessionDidDeactivate:(WCSession *)session{
+    NSLog(@"session deactivated");
+}
+- (void)sessionDidBecomeInactive:(WCSession *)session{
+    NSLog(@"session inactive");
+    
+}
+- (void)sessionReachabilityDidChange:(WCSession *)session{
+    NSLog(@"reachability chanage");
+    
+}
 - (IBAction)stopButtonPressed:(id)sender;
 {
      [_myTimer invalidate];

@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-        [FIRApp configure];
+    [FIRApp configure];
     if([UINavigationBar conformsToProtocol:@protocol(UIAppearanceContainer)]) {
         [UINavigationBar appearance].tintColor = [UIColor whiteColor];
     }
@@ -98,7 +98,7 @@
          [[AVAudioSession sharedInstance] setActive:YES error:&activationErr];
          */
     }
-
+    
     return YES;
 }
 
@@ -141,6 +141,7 @@
     [self saveContext];
     [UIApplication sharedApplication].idleTimerDisabled = NO;
    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"BpmSelected"];
+    //[[NSUserDefaults standardUserDefaults] removeObjectForKey:@"ipaddressjson"];
 
 }
 
