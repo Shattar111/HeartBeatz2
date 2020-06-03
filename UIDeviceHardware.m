@@ -50,14 +50,25 @@
     if ([platform isEqualToString:@"iPhone10,4"])   return @"iPhone 8";
     if ([platform isEqualToString:@"iPhone10,5"])   return @"iPhone 8 Plus";
     if ([platform isEqualToString:@"iPhone10,6"])   return @"iPhone X";
+    if ([platform isEqualToString:@"iPhone11,2"])   return @"iPhone XS";
+    if ([platform isEqualToString:@"iPhone11,4"])   return @"iPhone XS Max";
+    if ([platform isEqualToString:@"iPhone11,6"])   return @"iPhone XS Max Global";
+    if ([platform isEqualToString:@"iPhone11,8"])   return @"iPhone XR";
+    if ([platform isEqualToString:@"iPhone12,1"])   return @"iPhone 11";
+    if ([platform isEqualToString:@"iPhone12,3"])   return @"iPhone 11 Pro";
+    if ([platform isEqualToString:@"iPhone12,5"])   return @"iPhone 11 Pro";
+    if ([platform isEqualToString:@"iPhone12,8"])   return @"iPhone SE 2nd Gen";
 
+    
     if ([platform isEqualToString:@"iPod1,1"])      return @"iPod Touch 1G";
     if ([platform isEqualToString:@"iPod2,1"])      return @"iPod Touch 2G";
     if ([platform isEqualToString:@"iPod3,1"])      return @"iPod Touch 3G";
     if ([platform isEqualToString:@"iPod4,1"])      return @"iPod Touch 4G";
     if ([platform isEqualToString:@"iPod5,1"])      return @"iPod Touch 5G";
     if ([platform isEqualToString:@"iPod7,1"])      return @"iPod Touch 6G";
-    
+    if ([platform isEqualToString:@"iPod9,1"])      return @"iPod Touch 7G";
+
+
     if ([platform isEqualToString:@"iPad1,1"])      return @"iPad";
     if ([platform isEqualToString:@"iPad2,1"])      return @"iPad 2 (WiFi)";
     if ([platform isEqualToString:@"iPad2,2"])      return @"iPad 2 (GSM)";
